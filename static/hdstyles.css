@@ -1,0 +1,54 @@
+/* Navbar Styling */
+.navbar {
+    background: #2c3e50;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Navbar Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color: #ff4081;
+    border-radius: 5px;
+}
+
+/* Active Link Effect */
+.nav-links a.active {
+    background-color: #ff4081;
+    color: white !important;
+    border-radius: 5px;
+    font-weight: bold;
+}

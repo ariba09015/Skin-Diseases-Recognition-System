@@ -1,0 +1,353 @@
+body {
+    background-color: #F0F8FF; /* AliceBlue background */
+}
+/*eset styles
+* {
+   /*argin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color:black;
+}*/
+@media screen and (max-width: 786px), (min-width:1024px) {
+    
+}
+.navbar {
+    background: #2c3e50;
+    width: 100%;
+    color: white !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/* Hover Effect (Maus le jane par color change hoga) */
+.navbar a:hover {
+    background-color: #00ffcc;
+    border-radius: 5px;
+}
+
+/* Active Effect (Jab link par click hoga to color change ho jayega) */
+.navbar a:active {
+    background-color: #00ffcc;
+    border-radius: 5px;
+    color: blue;
+    transition: 0.7s;
+}
+
+
+/* Full-Width Fixed Header 
+.navbar {
+    background: #2c3e50;
+    width: 100%;
+    color: white  !important;;
+    position:fixed;
+    top: 0;
+    left: 0;
+    text-align: left ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Logo Styling 
+.logo {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Menu 
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white  !important;;
+}
+.navbar a {
+    position: relative;
+    color: white !important; /* Apply to all navbar links 
+}
+
+/* Navbar Links 
+.nav-links {
+    position: relative;
+    color: white!important;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    color: white !important;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    position: relative;
+    color: white  !important;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    position: relative;
+     color: white !important;
+    background-color: #ff4081;
+    border-radius: 5px;
+}
+
+/* Get Started Button */
+.get-started {
+    position: relative;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.get-started:hover {
+    position: relative;
+    background: #009999;
+    box-shadow: 0 0 10px #00ffcc
+}
+/* Button Styling */
+button {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #009999;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+
+/* Navbar Styling 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 15px 5%;
+    color: black;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    
+}
+
+/* Logo Styling 
+.logo {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    padding:5px;
+    white-space: nowrap;
+
+}
+
+/* Get Started Button 
+.goToMainPage{
+    background-color: #2196F3;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.goToMainPage:hover {
+    background-color: #1976D2;
+}
+
+
+/* Responsive Design 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: left;
+    }
+
+    .get-started {
+        margin-top: 10px;
+    }
+}*/
+.img9{
+    position: relative;
+    margin-left: 13%;
+    margin-top: -4%;
+}
+.img10{
+    position:relative;
+    margin-left: 44%;
+    margin-top: -1%;
+}
+.img11{
+    position: relative;
+    margin-left: 72%;
+    margin-top: -3%;
+}
+.hi{
+    position: relative;
+    margin-left: 9%;
+    margin-top: 1%;
+}
+.ha{
+    position: relative;
+    margin-left: 41%;
+    margin-top: -4%;
+}
+.hr{
+    position: relative;
+    margin-left: 69%;
+    margin-top: -4%;
+}
+.pi{
+    position: relative;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.pa{
+    position: relative;
+    margin-left: 35%;
+    margin-top: -8.5%;
+}
+.pr{
+    position: relative;
+    margin-left: 64%;
+    margin-top: -6.5%;
+}
+.footer {
+    background-color: #29323c;
+    color: #ffffff;
+    padding: 50px 10;
+    position: relative;
+    max-width: 1300%;
+    max-height: 450px;
+    height: 450px;
+    width: 100% ;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+     max-width: 1200%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #00aaff;
+}
+
+.footer .social-icons a {
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.newsletter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #00aaff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 300%;
+}
