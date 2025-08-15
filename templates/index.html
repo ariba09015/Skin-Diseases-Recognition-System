@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upstyle.css') }}" />
+</head>
+<body>
+    <div class="h">
+        <h1>Skin Diseases Recognition System</h1>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-container">
+        <h3>Show us the affected area</h3>
+        <form method="POST" enctype="multipart/form-data">
+            <input
+                type="file"
+                name="image"
+                id="fileInput"
+                accept="image/*"
+                required
+                onchange="previewImage()"
+            />
+            <div id="preview">
+                {% if image_path %}
+                    <img
+                        src="{{ url_for('static', filename=image_path) }}"
+                        alt="Uploaded Image"
+                    />
+                {% endif %}
+            </div>
+            <button type="submit">Diagnose</button>
+        </form>
+
+        <!-- Display Results -->
+        {% if prediction %}
+            <div id="results">
+                {% if prediction == "Irrelevant image detected" %}
+                    <p style="color: orange; font-weight: bold;">⚠️ {{ prediction }}</p>
+                    <p>{{ treatment }}</p>
+                    <p>Confidence: {{ confidence | round(2) }}%</p>
+
+                {% elif prediction == "No skin disease detected" %}
+                    <p style="color: red; font-weight: bold;">❌ {{ prediction }}</p>
+                    <p>{{ treatment }}</p>
+                    <p>Confidence: {{ confidence | round(2) }}%</p>
+
+                {% else %}
+                    <p id="diseaseName" style="color: green; font-weight: bold;">
+                        ✅ Prediction: {{ prediction }}
+                    </p>
+                    <p id="accuracy">Confidence: {{ confidence | round(2) }}%</p>
+                    <p id="treatment">Suggested Treatment: {{ treatment }}</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- JS Preview Function -->
+    <script>
+        function goToMainPage() {
+            window.location.href = "login page.html";
+        }
+
+        function previewImage() {
+            const file = document.getElementById("fileInput").files[0];
+            const preview = document.getElementById("preview");
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = "";
+            }
+        }
+    </script>
+
+    <!-- Navigation -->
+    <div class="navigation-buttons">
+        <a href="{{ url_for('home') }}" class="nav-btn right-btn">Home →</a>
+    </div>
+</body>
+</html>

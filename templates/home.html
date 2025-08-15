@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>DermaDetection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Instyles.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar" style="color: white;">
+        <table border="0" height="50px" width="100%" cellspacing="0">
+            <tr>
+                <th><a href="{{ url_for('home') }}"><i>DermaDetect</i></a></th>
+                <th><a href="{{ url_for('home') }}" class="active"><i>Home</i></a></th>
+                <th><a href="{{ url_for('technology') }}"><i>Technology</i></a></th>
+                <th><a href="{{ url_for('index') }}"><i>Upload Image</i></a></th>
+                <th><a href="{{ url_for('contact') }}"><i>Contact</i></a></th>
+                <!-- Get Started Button -->
+                <th><a href="{{ url_for('login') }}"><button>Get Started</button></a>
+            </tr>
+        </table>
+    </header>
+
+    <script>
+     
+        document.addEventListener("DOMContentLoaded", function () {
+            let links = document.querySelectorAll(".navbar a");
+            links.forEach(link => {
+                link.addEventListener("click", function () {
+                    links.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+<br><br><br><br><br>
+
+    <div class="h">
+        <h1>Detect Skin Conditions <br>Easily</h1>
+    </div>
+
+    <div class="p">
+        <p>
+            DermaDetect is a cutting-edge platform designed to assist healthcare professionals in the accurate and efficient<br> recognition 
+            of various skin conditions. Improve diagnostic accuracy and patient outcomes with our advanced <br>technology.
+        </p>
+    </div>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <div class="img">
+        <img src="{{ url_for('static', filename='image/dd.png') }}" height="30%" width="300px">
+    </div>
+    <div class="img1">
+        <img src="{{ url_for('static', filename='image/ee.png') }}" height="30%" width="300px">
+    </div>
+
+    <div class="h1">
+        <h1>Our Mission, Vision & Values</h1>
+    </div>
+    <div class="p1">
+        <p>
+            DermaDetect, we are dedicated to empowering healthcare professionals and patients with accurate and 
+            accessible<br> information for effective skin health management. Our vision is to lead in   
+            dermatological technology, transforming <br>skin disease diagnosis.    
+        </p>
+    </div>
+
+    <br>
+
+    <div class="h2">
+        <h2>5 Core Values</h2>
+    </div>
+    <div class="p2">
+        <p>
+            Our core values include innovation,<br> integrity, accessibility, 
+            and collaboration,<br> ensuring we meet the needs of our users.   
+        </p>
+    </div>
+
+    <div class="h3">
+        <h3>2 Team Members<br>  with1 Leadership</h3>
+    </div>
+    <div class="p3">
+        <p>
+            Our dedicated team includes experts like Dr. Ramzan<br> Malik, 
+            who brings over 15 years of experience in this field.<br> 
+            Ensuring our platform evolves with the latest research.
+        </p>
+    </div>
+
+    <div class="img2">
+        <img src="{{ url_for('static', filename='image/aa.png') }}" height="30%" width="300px">
+    </div>
+
+    <div class="h4">
+        <h2><b>Explore a Wide Range of Skin Conditions</b></h2>
+    </div>
+    <div class="p4">
+        <p>
+            Our platform offers comprehensive information on various skin conditions, from common ailments to rare diseases. <br>
+            We aim to empower healthcare professionals and  patients with the knowledge they need for effective diagnosis and<br>
+            management. Access detailed descriptions, images, and the latest research findings.<br>
+        </p>
+    </div>
+    <div class="list">
+        <ul>
+            <li>Actinic Keratosis: Understand the causes, symptoms, and treatment options </li>
+            <li>Eczema: Learn about different types of eczema and how to manage them.</li>
+            <li>Atopic Dermatitis: Discover the latest advancements in Eczema research and treatment.</li>
+            <li>Melanoma: Discover the latest advancements in melanoma research and treatment.</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="image-row">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image/a.png') }}" alt="High-Resolution">
+            <div class="caption">
+                <h2>High-Resolution</h2>
+                <p>Accurate and detailed imaging for precise diagnosis.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image/b.png') }}" alt="User-Friendly Interface">
+            <div class="caption">
+                <h2>User-Friendly Interface</h2>
+                <p>Easy to navigate and intuitive design for all users.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image/cc.png') }}" alt="Extensive Knowledge Base">
+            <div class="caption">
+                <h2>Extensive Knowledge Base</h2>
+                <p>Access a vast database of medical information.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image/f.png') }}" alt="Secure Data Handling">
+            <div class="caption">
+                <h2>Secure Data Handling</h2>
+                <p>State-of-the-art security to protect patient data.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="img9">
+        <img src="{{ url_for('static', filename='image/iuu.png') }}" alt="Upload Step" height="5%" width="5%">
+    </div>
+    <div class="img10">
+        <img src="{{ url_for('static', filename='image/ss.png') }}" alt="Analyze Step" height="10%" width="5%">
+    </div>
+    <div class="img11">
+        <img src="{{ url_for('static', filename='image/uup.png') }}" alt="Result Step" height="15%" width="13%">
+    </div>
+
+    <div class="hi">
+        <h3>Upload Image</h3 >
+    </div>
+    <div class="ha">
+        <h3>Analyze & Detect</h3>
+    </div>
+    <div class="hr">
+        <h3>Receive Results</h3>
+    </div>
+
+    <div class="pi">
+        <p>Upload a clear image of the skin condition you <br>want to analyze. 
+            Ensure the image is well-lit<br> and focused for accurate results.</p>
+    </div>
+    <div class="pa">
+        <p>Our advanced AI algorithms analyze the image to <br>detect potential skin conditions. 
+            This process is fast, <br>secure, and reliable.</p>
+    </div>
+    <div class="pr">
+        <p>Receive a detailed report with potential diagnoses and <br>recommended actions. 
+            Consult with a healthcare <br> professional for further evaluation.</p>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div>
+                <br><br><br><br>
+                <h4 class="logo">Skin Diseases Recognition System</h4>
+                <p style="color: white;">Skin Diseases, S-2023, Pakistan</p>
+                <p style="color: white;">Email: ariba09015@gmail.com</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <br><br><br><br>
+                <h4>Skin Diseases</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Tips -->
+            <div>
+                <br><br><br><br>
+                <h4>Skin Health Tips</h4>
+                <ul>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Acne Prevention</a></li>
+                    <li><a href="#">Eczema Management</a></li>
+                    <li><a href="#">Psoriasis Care</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <br><br><br><br>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Skin Diseases Diagnose</a></li>
+                    <li><a href="#">Symptoms Checker</a></li>
+                    <li><a href="#">Treatment Recommendations</a></li>
+                </ul>
+            </div>
+
+            <!-- Social + Newsletter -->
+            <div>
+                <br><br><br><br>
+                <h4>FOLLOW Us</h4>
+                <div class="social-icons">
+                    <a href="#">&#xf099;</a>
+                    <a href="#">&#xf09a;</a>
+                    <a href="#">&#xf16d;</a>
+                </div>
+                <br>
+                <h4 style="color: white">Subscribe to our Newsletter</h4>
+                <div class="newsletter">    
+                    <input type="email" id="emailInput" placeholder="Enter your email">
+                    <button onclick="subscribe()">Subscribe</button>
+                </div>
+                <p id="successMessage" style="color: white; display: none;">Successfully subscribed!</p>
+            </div>
+
+            <script>
+                function subscribe() {
+                    var email = document.getElementById("emailInput").value;
+                    var message = document.getElementById("successMessage");
+
+                    if (email.trim() !== "") {
+                        message.style.display = "block";
+                        message.innerText = "Successfully subscribed!";
+                    } else {
+                        alert("Please enter a valid email.");
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2025 Skin Diseases Recognition System . All Rights Reserved.</p>
+            <p>
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Sitemap</a>
+                <br><br>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

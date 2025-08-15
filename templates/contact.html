@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>DermaDetection</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='costyles.css') }}">
+</head>
+ <!-- Header Section -->
+ <header class="navbar" style="color: white;">
+    <table border="0" height="50px" width="100%" cellspacing="0">
+        <tr>
+            <!-- Logo -->
+            <th class="logo">DermaDetect</th>
+            <!-- Navigation Links -->
+            <th><a href="{{ url_for('home') }}"><i>Home</i></a></th>
+            <th><a href="{{ url_for('technology') }}"><i>Technology</i></a></th>
+            <th><a href="{{ url_for('index') }}"><i>Upload Image</i></a></th>
+            <th><a href="{{ url_for('contact') }}" class="active"><i>Contact</i></a></th>
+            <!-- Get Started Button -->
+            <th><a href="{{ url_for('login') }}"><button>Get Started</button></a>
+        </tr>
+    </table>
+</header>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let links = document.querySelectorAll(".navbar a");
+
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                // Remove 'active' from all links
+                links.forEach(l => l.classList.remove("active"));
+
+                // Add 'active' class to the clicked link
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+<body>
+       <!--<header class="navbar">
+        <table border-style="solid" border="0px" height="40px" width="100%" cellspacing="0px" align="right">
+        <div class="logo" margin-left="10%">DermaDetect
+        <tr>
+            <th><a href="index.html"><i>Home</i></a></th>
+    <th><a href="technology.html"><i>Technology</i></a></th>
+    <th><a href="uploading.html"><i>Upload Image</i></a></th>
+    <th><a href="contact.html"><i>Contact</i></a></th>
+    <th><button onclick="goToMainPage()">Get Started</button></th>
+    </tr>
+</div>
+    </table>
+</header>
+<script>
+    function goToMainPage() {
+        window.location.href = "index.html"; // Yahan apne main page ka file name dal do
+    }
+         Logo 
+    </script> -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="img9">
+    <img src="{{ url_for('static', filename='image/c1.png') }}" alt="Extensive Knowledge Base" height="2%" width="3%">
+</div>
+<div class="img10">
+    <img src="{{ url_for('static', filename='image/c2.png') }}" alt="Extensive Knowledge Base" height="7%" width="3%">
+</div>
+<div class="img11">
+    <img src="{{ url_for('static', filename='image/c3.png') }}" alt="Extensive Knowledge Base" height="7%" width="7%">
+</div>
+
+<div class="hi">
+<h1>Email Us</h1>
+</div>
+<div class="ha">
+    <h1>Call Us</h1>
+</div>
+<div class="hr">
+    <h1>Visit Us</h1>
+</div>
+<div class="pi">
+    <p>For any inquiries or support, feel free to reach <br>out to us via email at <email>ariba09015@gmail.com</email><br>
+        Our team is ready to assist you with any questions<br> you may have.</p>
+</div>
+<div class="pa">
+    <p>You can contact us directly by phone at <br>+92(3010925558). 
+        We are available to take your <br>calls and provide assistance during business hours.</p>
+</div>
+<div class="pr">
+    <p>Our office is located at University Of Sargodha <br>94103, United States. 
+        We welcome visitors and  are<br> happy to discuss our services and solutions in person.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4 class="logo">Skin Diseases Recognition System</h4>
+            <p style="color: white;">Skin Diseases, S-2023, Pakistan</p>
+            <p style="color: white;">Email: ariba09015@gmail.com</p>
+        </div>
+
+        <!-- Oriflame Links -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Skin Diseases</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Products Links -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Skin Health Tips</h4>
+            <ul>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Acne Prevention</a></li>
+                <li><a href="#">Eczema Management</a></li>
+                <li><a href="#">Psoriasis Care</a></li>
+            </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Skin Diseases Diagnose</a></li>
+                <li><a href="#">Symptoms Checker</a></li>
+                <li><a href="#">Treatment Recommendations</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media and Newsletter -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>FOLLOW Us</h4>
+            <div class="social-icons">
+                <a href="#">&#xf099;</a> <!-- Twitter icon -->
+                <a href="#">&#xf09a;</a> <!-- Facebook icon -->
+                <a href="#">&#xf16d;</a> <!-- Instagram icon -->
+                <!-- Add other social media icons -->
+            </div>
+            <br>
+
+            <h4 style="color: white">Subscribe to our Newsletter</h4>
+            <div class="newsletter">    
+                <input type="email" id="emailInput" placeholder="Enter your email">
+                <button onclick="subscribe()">Subscribe</button>
+            </div>
+            <p id="successMessage" style="color: white; display: none;">Successfully subscribed!</p>
+            
+            <script>
+            function subscribe() {
+                var email = document.getElementById("emailInput").value;
+                var message = document.getElementById("successMessage");
+            
+                if (email.trim() !== "") {
+                    message.style.display = "block";  // Show success message
+                    message.innerText = "Successfully subscribed!";
+                } else {
+                    alert("Please enter a valid email.");
+                }
+            }
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p style="color: white;">&copy; 2025 Skin Diseases Recognition System . All Rights Reserved.</p>
+        <p>
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Sitemap</a>
+            <br>
+            <br>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

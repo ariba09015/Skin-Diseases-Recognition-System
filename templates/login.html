@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    .hy{
+            position: relative;
+            margin-top: 50px;
+            margin-right: 34px;
+            color:black;
+            font-size:xx-large;
+            right: 80px;
+            top: -50px;
+
+            
+        }
+    
+        .login-container {
+            background-color:linen ;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            height: 300px;
+            backdrop-filter: blur(10px);
+            width: 300px;
+            color: black;
+            
+        }
+        .login-container h2 {
+            color: white;
+            margin-right: 10px;
+        }
+        .login-container input {
+            position: relative;
+            margin-left: 1%;
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            color: black;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #218838;
+        }   
+        .links {
+            position: relative;
+            margin-top: 10px;
+        }
+        .links a {
+            color:black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .links a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <div class="hy">
+            <p>Skin Diseases Recognition System</p>
+        </div>
+    
+    <div class="login-container">
+
+        <h2 style="color: black;">Welcome</h2>
+        <input type="email" id="email" placeholder="Email Address" required>
+        
+        <input type="password" id="password" placeholder="Password">
+       <button id="loginBtn">Login</button>
+       <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if both email and password fields are filled
+            if (email === "" || password === "") {
+                alert("Please fill out all fields.");
+            } else if (!email.includes("@")) {
+                    alert("Invalid email! '@' is missing.");
+                } else {
+                    // Redirect if everything is valid
+                    window.location.href = "{{ url_for('home') }}";
+                }
+            });
+       // function validateEmail(){
+         //   const email=document.getElementById("email").value;
+        //if(!email.includes("@")){
+          //  alert("invalid email! '@' is missing.");
+            //return false;
+        //}
+        //return true;
+       // }
+       </script>
+        <div class="links">
+            <a href="#">Password</a>  <a href="#">Register</a>
+        </div>
+    </div>
+</body>
+</body>
+</html>
